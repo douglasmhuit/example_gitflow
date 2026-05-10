@@ -6,5 +6,8 @@ def dividir(a: float, b: float) -> float:
         ValueError: Si el divisor es cero.
     """
     if b == 0:
-        raise ValueError("División por cero no permitida.")
+        raise ValueError(
+            "División por cero no permitida. "
+            "Ingresa un divisor distinto de cero."
+        )
     return a / b
